@@ -1,0 +1,43 @@
+<div class='container'>
+
+  <div id='search_div'>
+
+    <form action='/media/search' method='get' class='search'>
+      <label>Latitude</label>
+      <input class='input_field' type='text' name='lat' placeholder='37.7833'><br>
+      <label>Longitude</label>
+      <input class='input_field' type='text' name='lng' placeholder='122.4167'><br>
+      <% if session_logged_in? %>
+        <label>Name</label>
+        <input class='input_field' type='text' name='name' placeholder='add a name to save location'><br>
+      <% else %>
+        <label style='display:none;'>Name</label>
+        <input class='input_field' type='text' name='name' placeholder='San Francisco, My City' style='display:none;'><br>
+      <% end %>
+      <br>
+      <input id='media_search' type='submit' value='Submit'>
+    </form>
+
+  </div>
+
+  <h2> OR </h2>
+
+  <div id="seach_by_tag">
+    <form action='/media/tags' method='get' class='search'>
+      <label>Tag of Choice</label>
+      <input class='input_field' type='text' name='tag' placeholder='beach'>
+      <br><br>
+      <input id='tag_search' type='submit' value='Submit'>
+    </form>
+
+
+  </div>
+  <p></p>
+  <p></p>
+  <div id="index_search">
+
+  </div>
+
+</div>
+
+
