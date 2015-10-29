@@ -7,6 +7,3 @@ It utilizes the Instagram API and features RESTful routing. Technologies used in
 
 This project was amazing in that it was the first web app that I built which used an API. Through this project, I solidified my understanding of RESTful routes and AJAX.
 
-#### What I Would Change
-
-In the future I hope to revise Pixie so that a user can simply input the name of a city or a zipcode in order to view all the photos in that location. I was originally thinking of using the Google Reverse Geocoding API in order to accomplish this, and I would love to integrate that feature when I have time.
